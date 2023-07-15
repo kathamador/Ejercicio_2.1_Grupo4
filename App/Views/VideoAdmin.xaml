@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
+             x:Class="App.VideoAdmin">
+    <StackLayout>
+        <StackLayout Padding="16, 20" Spacing="10">
+            <Grid>
+                <mm:VideoView x:Name="videov" HeightRequest="600" ShowControls="True" />
+                <Button x:Name="BtTomarVideo" BackgroundColor="#11000000" Text="Tomar video..." HorizontalOptions="End"
+                        VerticalOptions="End" FontSize="Caption" Clicked="BtTomarVideo_Clicked" />
+            </Grid>
+            <Label HorizontalOptions="CenterAndExpand" Text="Nombre" />
+            <Entry x:Name="TxtNombre" BackgroundColor="White" />
+            <Button x:Name="BtTomar" Clicked="BtTomarVideo_Clicked" Text="Grabar video" />
+            <Button x:Name="BtSalvar" IsEnabled="True" Clicked="BtSalvar_Clicked" Text="Salvar" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
